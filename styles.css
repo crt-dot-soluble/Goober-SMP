@@ -162,6 +162,33 @@ body {
     font-weight: 500;
 }
 
+.server-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.explore-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.explore-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+}
+
 .hero-visual {
     flex: 1;
     display: flex;
@@ -454,6 +481,12 @@ body {
     .ip-container {
         flex-direction: column;
         gap: 0.5rem;
+    }
+    
+    .server-actions {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
     }
 }
 
