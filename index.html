@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goober SMP - Minecraft Server Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Goober SMP</h1>
+                <p class="hero-subtitle">Welcome to our amazing Minecraft community!</p>
+                <div class="server-info">
+                    <div class="ip-container">
+                        <span class="ip-label">Server IP:</span>
+                        <span class="ip-address" id="serverIP">162.245.187.40:26220</span>
+                        <button class="copy-btn" onclick="copyToClipboard()">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Online</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="floating-item">⚔️</div>
+                    <div class="floating-item">🏰</div>
+                    <div class="floating-item">🌲</div>
+                    <div class="floating-item">⛏️</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download-section">
+        <div class="container">
+            <h2 class="section-title">Download Modpack</h2>
+            <div class="download-cards">
+                <div class="download-card">
+                    <div class="card-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Full Modpack</h3>
+                    <p>Complete modpack with all mods and dependencies</p>
+                    <a href="https://1drv.ms/u/c/69fd4ebe47093a3e/EQQtjx0XfKtJuZo0iDx5CTcBmiYtd0a13X6ua6iapG-dqg?e=052wWM" class="download-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-download"></i>
+                        Download Full Pack
+                    </a>
+                </div>
+                <div class="download-card">
+                    <div class="card-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Server Modpack</h3>
+                    <p>Server-side mods only for hosting</p>
+                    <div class="download-btn" style="cursor: default; opacity: 0.7; pointer-events: none;">
+                        <i class="fas fa-clock"></i>
+                        Coming Soon!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mods Section -->
+    <section class="mods-section">
+        <div class="container">
+            <h2 class="section-title">Included Mods</h2>
+            <div class="mods-grid">
+                <!-- Performance Mods -->
+                <div class="mod-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tachometer-alt"></i>
+                        Performance
+                    </h3>
+                    <div class="mod-list">
+                        <div class="mod-item">C2ME</div>
+                        <div class="mod-item">Debugify</div>
+                        <div class="mod-item">Ferrite Core</div>
+                        <div class="mod-item">Ksyxis</div>
+                        <div class="mod-item">Sodium</div>
+                        <div class="mod-item">Lithium</div>
+                        <div class="mod-item">Entity Culling</div>
+                        <div class="mod-item">Immediately Fast</div>
+                        <div class="mod-item">Let Me Despawn</div>
+                        <div class="mod-item">Clumps</div>
+                        <div class="mod-item">OptiGUI</div>
+                        <div class="mod-item">Fast IP Ping</div>
+                    </div>
+                </div>
+
+                <!-- QOL Mods -->
+                <div class="mod-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-heart"></i>
+                        Quality of Life
+                    </h3>
+                                         <div class="mod-list">
+                         <div class="mod-item">Essentials</div>
+                         <div class="mod-item">Lootr</div>
+                         <div class="mod-item">Better Third Person</div>
+                         <div class="mod-item">Mod Menu</div>
+                         <div class="mod-item">Double Doors</div>
+                         <div class="mod-item">Chat Heads</div>
+                         <div class="mod-item">Voice Chat</div>
+                         <div class="mod-item">Controlling</div>
+                         <div class="mod-item">Journey Map</div>
+                         <div class="mod-item">Journey Web Map</div>
+                         <div class="mod-item">Simple HUD Enhanced</div>
+                         <div class="mod-item">Tree Harvester</div>
+                         <div class="mod-item">Do a Barrel Roll</div>
+                         <div class="mod-item">Dynamic Crosshair</div>
+                         <div class="mod-item">Inventory Profiles Next</div>
+                         <div class="mod-item">Jade</div>
+                         <div class="mod-item">Trash Slot</div>
+                         <div class="mod-item">Vein Miner</div>
+                         <div class="mod-item">Appleskin</div>
+                         <div class="mod-item">Mouse Tweaks</div>
+                         <div class="mod-item">Inventory Essentials</div>
+                     </div>
+                </div>
+
+                <!-- Exploration & Aesthetic Mods -->
+                <div class="mod-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-cube"></i>
+                        Exploration & Aesthetic
+                    </h3>
+                                         <div class="mod-list">
+                         <div class="mod-item">Dungeons and Taverns</div>
+                         <div class="mod-item">Structory</div>
+                         <div class="mod-item">Structory Towers</div>
+                         <div class="mod-item">Moog's Soaring Structures</div>
+                         <div class="mod-item">Moog's Voyager Structures</div>
+                         <div class="mod-item">Distant Horizons</div>
+                         <div class="mod-item">Iris</div>
+                         <div class="mod-item">Sound Physics Remastered</div>
+                         <div class="mod-item">Not Enough Animations</div>
+                         <div class="mod-item">Visuality</div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources-section">
+        <div class="container">
+            <h2 class="section-title">Additional Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Resource and Data Packs</h3>
+                    <p>Enhanced textures, visual improvements, and custom game mechanics</p>
+                    <div class="resource-list">
+                        <div class="resource-item">Ray's 3D Rails</div>
+                        <div class="resource-item">Ray's 3D Ladders</div>
+                        <div class="resource-item">Better Icons</div>
+                        <div class="resource-item">Visual Armor Trims</div>
+                        <div class="resource-item">Low Shield</div>
+                        <div class="resource-item">Fancy Crops</div>
+                        <div class="resource-item">Fresh Animations</div>
+                        <div class="resource-item">Tooltips Stylized</div>
+                        <div class="resource-item">Better Leaves</div>
+                        <div class="resource-item">Even Better Enchants</div>
+                        <div class="resource-item">Data Packs - Coming Soon...</div>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Shaders</h3>
+                    <p>Beautiful lighting and atmospheric effects</p>
+                    <div class="resource-list">
+                        <div class="resource-item">Complimentary Reimagined</div>
+                        <div class="resource-item">Complimentary Unbound</div>
+                        <div class="resource-item">BSL</div>
+                        <div class="resource-item">MakeUp UltraFast</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Goober SMP. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
